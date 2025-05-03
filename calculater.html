@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculater.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="input" class="input" readonly>
+    <form class="keys">
+        <span class="key " id="clear"
+        onclick="clearInput()">C</span>
+        <span class="key" 
+        onclick="addOperator('/')">/</span>
+        <span class="key" 
+        onclick="addOperator('*')">*</span>
+        <span class="key" 
+        onclick="appendNumber('7')">7</span>
+        <span class="key" 
+        onclick="appendNumber('8')">8</span>
+        <span class="key" 
+        onclick="appendNumber('9')">9</span>
+        <span class="key" 
+        onclick="addOperator('+')">+</span>
+        <span class="key" 
+        onclick="appendNumber('4')">4</span>
+        <span class="key" 
+        onclick="appendNumber('5')">5</span>
+        <span class="key" 
+        onclick="appendNumber('6')">6</span>
+        <span class="key" 
+        onclick="addOperator('-')">-</span>
+        <span class="key" 
+        onclick="appendNumber('1')">1</span>
+        <span class="key" 
+        onclick="appendNumber('2')">2</span>
+        <span class="key" 
+        onclick="appendNumber('3')">3</span>
+        <span class="key" 
+        onclick="appendNumber('0')">0</span>
+        <span class="key" 
+        onclick="appendNumber('00')">00</span>
+        <span class="key" 
+        onclick="appendNumber('.')">.</span>
+        <span class="key" id="equal" 
+        onclick="calculate()">=</span>    
+        </form>
+    </div>
+
+    <script src="calculater.js"></script>
+</body>
+</html>
